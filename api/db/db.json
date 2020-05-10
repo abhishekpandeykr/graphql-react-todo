@@ -1,0 +1,94 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "taskName": "Create a GraphQL Application",
+      "status": "COMPLETED",
+      "createdAt": "now"
+    },
+    {
+      "id": "Uo1Q_luVS0VDL6gw0PiS6",
+      "createdAt": 1589048279978,
+      "taskName": "Graphql API",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "K5IckZhwH89IfPFuFgTA8",
+      "createdAt": 1589052270654,
+      "taskName": "Create React App",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "RdtI11gFCSCRlO-oxk2mW",
+      "createdAt": 1589052308648,
+      "taskName": "Create React App",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "G-Wknu3Izhsoa7e9SPiA0",
+      "createdAt": 1589052357975,
+      "taskName": "Create React App",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "UszJvY0CBESSkh0_WfFsn",
+      "createdAt": 1589127186284,
+      "taskName": "Create React App2",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "7isBy9TlXXs9OChvekNhk",
+      "createdAt": 1589128307575,
+      "taskName": "creating ToDO Application",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "XSC2yVq-gDtnPy4cVWe03",
+      "createdAt": 1589129962038,
+      "taskName": "abhishek",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "CBpdcwhU-auHtGD-wJ31x",
+      "createdAt": 1589130034072,
+      "taskName": "Testing this things for test",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "MaKBt2D14DNukZzNduymO",
+      "createdAt": 1589131214547,
+      "taskName": "testing final data",
+      "status": "COMPLETED"
+    },
+    {
+      "id": "cq9MgU3Zr4KlXOJS_4-0f",
+      "createdAt": 1589131260383,
+      "taskName": "testing final data",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "Rae4mmUa0mE90Mj-iDbiu",
+      "createdAt": 1589131336732,
+      "taskName": "final data testing",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "RY0zgu0eQQGmwCoJUTmRt",
+      "createdAt": 1589131424816,
+      "taskName": "Testing this things for test again",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "C9arOQnpe0lYTJPAdeOM-",
+      "createdAt": 1589132894795,
+      "taskName": "Create Todo Application for Server",
+      "status": "NOT_STARTED"
+    },
+    {
+      "id": "4jNp-RottlmfrkcmGR3ug",
+      "createdAt": 1589132917860,
+      "taskName": "Create Todo Application for Server",
+      "status": "NOT_STARTED"
+    }
+  ]
+}

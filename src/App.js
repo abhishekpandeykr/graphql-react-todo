@@ -43,7 +43,7 @@ function App() {
       const allToDos = cache.readQuery({query:GET_ALL_TODOS});
       cache.writeQuery({
         query:GET_ALL_TODOS,
-        data:[createToDo, ...allToDos.getAllToDo]
+        data:{getAllToDo:[createToDo, ...allToDos.getAllToDo]}
       })
     }
   })

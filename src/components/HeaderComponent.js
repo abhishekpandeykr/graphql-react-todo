@@ -1,5 +1,5 @@
-import React from 'react';
-import { Typography } from '@material-ui/core';
+import React from "react";
+import { Typography } from "@material-ui/core";
 
 const HeaderComponent = () => (
   <div style={HeaderStyle}>
@@ -9,14 +9,12 @@ const HeaderComponent = () => (
   </div>
 );
 
-
 const HeaderStyle = {
-  height: '100%',
-  width: '100%',
-  background: '#6562e2',
-  padding: '10px',
-  margin:'auto'
-}
+  height: "100%",
+  width: "100%",
+  background: "#6562e2",
+  padding: "10px",
+  margin: "auto",
+};
 
 export default HeaderComponent;
-

@@ -24,6 +24,7 @@
         "nanoid": "^3.1.6"
     },
     "scripts": {
+        "format": "prettier \"src/**/*.{js,html}\" --write",
         "start": "react-scripts start",
         "server": "nodemon api/server.js",
         "build": "react-scripts build",
@@ -45,6 +46,16 @@
             "last 1 safari version"
         ]
     },
-    "author": { "name": "Abhishek Kumar Pandey" },
-    "keywords": ["GraphQL", "Apollo-Server", "React", "Lowdb"]
+    "author": {
+        "name": "Abhishek Kumar Pandey"
+    },
+    "keywords": [
+        "GraphQL",
+        "Apollo-Server",
+        "React",
+        "Lowdb"
+    ],
+    "devDependencies": {
+        "prettier": "^2.0.5"
+    }
 }

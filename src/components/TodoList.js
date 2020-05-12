@@ -4,6 +4,9 @@ import ToDoCard from './ToDo'
 import { makeStyles } from '@material-ui/core/styles';
 import { faCheckCircle,faCircle } from "@fortawesome/free-solid-svg-icons";
 import { colors } from '@material-ui/core';
+import gql from "graphql-tag";
+import { useQuery,useMutation } from '@apollo/react-hooks';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -12,13 +15,49 @@ const useStyles = makeStyles((theme) => ({
       width: '35ch',
     },
   },
-})); 
+}));
 
-const ToDoListComponent = ({getAllToDo=[], changeStatus}) => {
+const GET_ALL_TODOS = gql`
+  {
+    getAllToDo {
+      taskName
+      status
+      id
+    }
+  }
+`
+const TOGGLE_TODO_STATUS = gql`
+  mutation toggleToDo($updatedToDO:UpdateToDo){
+    updateToDo(input:$updatedToDO){
+      taskName
+      status
+      id
+    }
+  }
+`
+
+const ToDoListComponent = () => {
   const classes = useStyles();
+  const { data, loading, error } = useQuery(GET_ALL_TODOS);
+  const [toggleStatus, toggledToDos] = useMutation(TOGGLE_TODO_STATUS);
+  console.log(data,'data is')
+
+  if (loading || toggledToDos.loading) return <p>Loading...</p>;
+  if (error || toggledToDos.error ) return <p>Error</p>;
+
+  const changeStatus = (currentToDo) => {
+    const toggleStatusReqObj = {
+      id: currentToDo.id,
+      status:currentToDo.status
+    }
+    toggleStatus({
+      variables:{updatedToDO:toggleStatusReqObj}
+    })
+  }
+
   return (
     <div style={todoAlignment}>
-      {getAllToDo.map((todo,index) => (
+      {data.getAllToDo.map((todo,index) => (
       <Paper className={classes.root} variant="elevation" key={index} elevation={1} rounded="true" >
         <ToDoCard {...todoIcon(todo, changeStatus)} />
       </Paper>

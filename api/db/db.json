@@ -30,5 +30,11 @@
       "taskName": "hello how are you",
       "status": "NOT_STARTED"
     }
+  ],
+  "users": [
+    {
+      "username": "ABhishek",
+      "password": "test"
+    }
   ]
 }
